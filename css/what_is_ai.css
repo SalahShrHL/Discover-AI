@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/**********************le navbar*************************************************************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #09dca4;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li :focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+header .navbar {
+    float: none;
+}
+/**********************************************************************************************/
+/**********style de texte **********/
+.container {
+    position: relative;
+    top: 0;
+    padding: 10%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 30px;
+    font-size: large;
+	text-transform:none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: #474648;
+}
+/**************le style d'images (meme style mais deux images differentes)***********/
+.circle {
+    width: 200px;
+    height: 200px;
+    background: url(../images/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();  /*La propriété shape-outside définit une forme autour de laquelle le contenu en ligne devra s’écouler */
+    margin: 60px 30px 30px 0px
+}
+.circle2 {
+    width: 200px;
+    height: 200px;
+    background: url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 60px 30px 30px 0px
+}
+/**************************************le footer*****************************************************/
+.footer-p {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.parti-footer {
+    width: 33%;
+    float: left;
+    text-align: left;
+    color: #fff;
+}
+
+.parti-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.parti-footer ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.parti-footer p {
+    width: 70%;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+    background-color: #262626;
+}
+
